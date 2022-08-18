@@ -10,214 +10,16 @@ static const unsigned int gappov    = 30;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char dmenufont[]       = "Fira Code:size=1";
+static const char dmenufont[]       = "Ubuntu Nerd Font:size=16";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const char *fonts[]          = { "Fira Code Retina Nerd Font Complete:size=10" };
+static const char col_urgborder[]   = "#ff0000";
+static const char *fonts[]          = { "Ubuntu Nerd Font:size=14" };
 
-/* Evangelion Purple one */
-//static const char norm_fg[] = "#952156";
-//static const char norm_bg[] = "#9f7fb0";
-//static const char norm_border[] = "#220926";
-
-//static const char sel_fg[] = "#cec4cf";
-//static const char sel_bg[] = "#8f1849";
-//static const char sel_border[] = "#b4b1b8";
-
-//static const char *colors[][3]      = {
-    /*               fg           bg         border                         */
-//    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-//    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-//};
-
-/*
- //lain one 
-static const char norm_fg[] = "#ffe6eb";
-static const char norm_bg[] = "#000000";
-static const char norm_border[] = "#191919";
-
-static const char sel_fg[] = "#ffe6eb";
-static const char sel_bg[] = "#A78A7A";
-static const char sel_border[] = "#ffe6eb";
-
-static const char *colors[][3]      = {
-    //               fg           bg         border                         
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
-*/
-/*
-// lain two
-static const char norm_fg[] = "#ffffee";
-static const char norm_bg[] = "#101212";
-static const char norm_border[] = "#272c2c";
-
-static const char sel_fg[] = "#ffffee";
-static const char sel_bg[] = "#9C9276";
-static const char sel_border[] = "#ffffee";
-
-static const char *colors[][3]      = {
- //                  fg           bg         border                         
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
-*/
-/* cool flower one 
-
-
-static const char norm_fg[] = "#d7a6c3";
-static const char norm_bg[] = "#0D1E27";
-static const char norm_border[] = "#967488";
-
-static const char sel_fg[] = "#d7a6c3";
-static const char sel_bg[] = "#0f686c";
-static const char sel_border[] = "#d7a6c3";
-
-
-static const char *colors[][3]      = {
-    //               fg           bg         border                         
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
-
-*/
-// forst steps one
-/*
-static const char norm_fg[] = "#b3baba";
-static const char norm_bg[] = "#121a1b";
-static const char norm_border[] = "#7d8282";
-
-static const char sel_fg[] = "#b3baba";
-static const char sel_bg[] = "#4C4F4F";
-static const char sel_border[] = "#b3baba";
-
-static const char *colors[][3]      = {
-  //               fg           bg         border                         
-   [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-   [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};*/
-
-//gren tea
-/*j
-static const char norm_fg[] = "#c3c8cc";
-static const char norm_bg[] = "#031310";
-static const char norm_border[] = "#888c8e";
-
-static const char sel_fg[] = "#c3c8cc";
-static const char sel_bg[] = "#4F9347";
-static const char sel_border[] = "#c3c8cc";
-
-static const char *colors[][3]      = {
-    //R               fg           bg         border                         
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
-*/
-
-
-
-// red-blue 3d one
-/*
-static const char norm_fg[] = "#b1bbbd";
-static const char norm_bg[] = "#090d11";
-static const char norm_border[] = "#7b8284";
-static const char sel_fg[] = "#b1bbbd";
-static const char sel_bg[] = "#30294D";
-static const char sel_border[] = "#b1bbbd";
-
-static const char *colors[][3]      = {
-  //               fg           bg         border                         
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
-*/
-//static const char *colors[][3]      = {
-//#include "/home/dylandy/.cache/wal/colors-wal-dwm.h"
-	//               fg         bg         border   
-//	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-//	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-//};
-
-
-//my god is the sun
-//
-//static const char norm_fg[] = "#efe3e1";
-//static const char norm_bg[] = "#040404";
-//static const char norm_border[] = "#a79e9d";
-//
-//static const char sel_fg[] = "#efe3e1";
-//static const char sel_bg[] = "#e54f74";
-//static const char sel_border[] = "#efe3e1";
-//
-//static const char *colors[][3]      = {
-//
-//    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-//    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-//};
-
-// Red blue abstract
-/*static const char norm_fg[] = "#82cce6";
-static const char norm_bg[] = "#0d1018";
-static const char norm_border[] = "#5b8ea1";
-
-static const char sel_fg[] = "#82cce6";
-static const char sel_bg[] = "#cb1d2e";
-static const char sel_border[] = "#82cce6";
-
-static const char *colors[][3]      = {
-     //              fg           bg         border                         
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};*/
-// ice mounatain
-
-//static const char norm_fg[] = "#d7d8d6";
-//static const char norm_bg[] = "#0C0C0B";
-//static const char norm_border[] = "#969795";
-//
-//static const char sel_fg[] = "#d7d8d6";
-//static const char sel_bg[] = "#86857B";
-//static const char sel_border[] = "#d7d8d6";
-//
-//static const char *colors[][3]      = {
-//    /*               fg           bg         border                         */
-//    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-//    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-//};
-
-//small image one 
-
-//static const char norm_fg[] = "#e1e8e9";
-//static const char norm_bg[] = "#000000";
-//static const char norm_border[] = "#9da2a3";
-//
-//static const char sel_fg[] = "#e1e8e9";
-//static const char sel_bg[] = "#1969C2";
-//static const char sel_border[] = "#e1e8e9";
-//
-//static const char *colors[][3]      = {
-//    /*               fg           bg         border                         */
-//    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-//    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-//};
-
-//epic edgy one
-static const char norm_fg[] = "#c8c9c9";
-static const char norm_bg[] = "#090A0A";
-static const char norm_border[] = "#8c8c8c";
-
-static const char sel_fg[] = "#c8c9c9";
-static const char sel_bg[] = "#493651";
-static const char sel_border[] = "#c8c9c9";
-
-static const char *colors[][3]      = {
-    /*               fg           bg         border                         */
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
+#include "/home/dylandy/.cache/wal/colors-wal-dwm.h"
 
 
 /* tagging */
@@ -275,15 +77,14 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
-static const char *rofi[]     = { "rofi" , "-show" , "run", "-theme", "/home/dylandy/.cache/wal/colors-rofi-light.rasi" };
-static const char *ss[] = {"/home/dylandy/Scripts/ss.sh","ARGUMENTS", NULL};
+static const char *ss[] = {"screenshot.sh", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = rofi } },
-  { MODKEY,                       XK_s,      spawn,          {.v = ss}    },
+	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+    { MODKEY,                       XK_s,      spawn,          {.v = ss}    },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
