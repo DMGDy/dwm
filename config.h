@@ -11,9 +11,10 @@ static       int smartgaps          = 0;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char dmenufont[]       = 
-{"Fira Code Regular Nerd Font Complete Mono:size=16"};
+{"FiraCodeNerdFont-Retina:size=16"};
+
 static const char *fonts[]          = 
-{ "Fira Code Regular Nerd Font Complete Mono:size=14" };
+{ "Fira Code Regular Nerd Font-Retina :size=20" };
 
 #include "/home/dylandy/.cache/wal/colors-wal-dwm.h"
 
@@ -30,6 +31,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "zenity",		NULL,				NULL,				0,						1						 -1},
 };
 
 /* layout(s) */
@@ -73,20 +75,21 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", NULL };
-static const char *termcmd[]  = { "kitty", NULL };
-static const char *ss[] 			= {"dwm-func.sh","ss",NULL };
-static const char *inc_b[] 		= {"dwm-func.sh","inc-b",NULL};
-static const char *dec_b[] 		= {"dwm-func.sh","dec-b",NULL};
+static const char *dmenucmd[] = { "dmenu-run", NULL };
+static const char *rofi[]			= {"/home/dylandy/.config/rofi/launchers/type-5/launcher.sh",NULL};
+static const char *termcmd[]  = { "wezterm", NULL };
+static const char *ss[] 			= {"ss.sh",NULL };
+static const char *inc[] 		= {"adj_brightness.sh","inc",NULL};
+static const char *dec[] 		= {"adj_brightness.sh","dec",NULL};
 
 
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_p,      spawn,          {.v = rofi} },
 	{ MODKEY,                       XK_s,      spawn,          {.v = ss}    },
-	{ MODKEY|ShiftMask, 						XK_k,			 spawn, 				 {.v = inc_b}},
-	{ MODKEY|ShiftMask, 						XK_j,			 spawn, 				 {.v = dec_b}},
+	{ MODKEY|ShiftMask,							XK_k,			 spawn,          {.v = inc}},
+	{ MODKEY|ShiftMask, 						XK_j,	   	 spawn,          {.v = dec}},
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
